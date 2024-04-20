@@ -1,0 +1,76 @@
+
+* {
+	box-sizing: border-box;
+}
+
+
+body
+{
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.title
+{
+    text-align: center;
+   
+}
+
+.main
+{
+    font-size:  80px;
+}
+
+/* Images and Caption prompts */
+
+.row img{
+
+
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+/* Positional code in order to centre caption and images neatly */
+.column {
+	float:left;
+	width: 33.33%;
+    height: width*1.2;
+	padding: 5px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    border: aqua;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  /* font manipulation code of captions */
+
+.caption {
+    display: block;
+    font-size: 15px;
+}
+
+.recipe-name {
+    font-family: 'Times New Roman', Times, serifs;
+    font-size: 24px;
+    
+    font-weight: bold;
+}
+
+.prep-time {
+    
+    font-weight: bold;
+}
+  

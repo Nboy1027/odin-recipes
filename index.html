@@ -4,15 +4,71 @@
     <head> 
         <meta charset="UTF-8">
         <title>Noam's Recipe</title>
-
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        
     
     </head>
 
     <body>
-        <h1>Noam and Adi Recipes</h1>
-        <a href="recipes/beer-meat-broth.html" target="_blank">Irish Beef Stew</a>
-        <p> <a href="recipes/honey-cookies.html" target="_blank">Grandma's Honey Cookies </a></p>
-        <p> <a href="recipes/persian-rice.html" target="_blank">Persian Rice - Potato Tahadic</a></p>
+        <h1 class="title main">Noam and Adi Recipes</h1>
+
+      <!-- Images as links with captions -->
+
+
+
+         <!-- Divded images and captions in a special container called "row" allows to contain and organize all graphics with its CSS prompt -->
+
+
+        <div class="row"> 
+
+           
+           <!-- Each image has its own link and captions as a block contained in the "column" class  -->
+
+            <div class="column">
+
+                    
+               
+                    <a href="recipes/beer-meat-broth.html" target="_blank"><img src="images/stew" alt="Stew" width="100%;"></a>
+                
+                    <!-- Captions have thier unique properties and are divided in various classes  -->
+                
+                    <div class="caption">
+                   
+                     <span class="recipe-name">Irish Beef Stew</span>
+
+                      <p> <span class="prep-time">• Time: </span> 3 hours</p>
+                    
+                </div>
+
+            </div>
+
+    
+            <div class="column">
+                <a href="recipes/honey-cookies.html" target="_blank"><img src="images/honey.jpg" alt="Honey" width="100%;"></a>
+                
+                <div class="caption">
+
+                    <span class="recipe-name">Honey Cookies</span>
+
+                     <p> <span class="prep-time">• Time: </span> 20 min</p>
+                   
+               </div>
+            </div>
+    
+            <div class="column">
+
+                <a href="recipes/persian-rice.html" target="_blank"><img src="images/persian.jpg" alt="Rice" width="100%;"></a>
+            
+                <div class="caption">
+                    
+                    <span class="recipe-name">Persian Rice</span>
+
+                     <p> <span class="prep-time">• Time: </span> 1.5 hours</p>
+                   
+               </div>
+
+            </div>
+        </div>
 
     </body>
 
